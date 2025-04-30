@@ -120,9 +120,9 @@ class BlaubergVentilation extends utils.Adapter {
 					this.createDeviceAndNumberState(ventConfigEntry, blaubergVentoJS.Parameter.FAN1RPM, "info", FAN1RPM, "", false, 0, 10000);
 					this.createDeviceAndNumberState(ventConfigEntry, blaubergVentoJS.Parameter.FILTER_ALARM, "info", FILTER_ALARM, "", false, 0, 1);
 					this.createDeviceAndNumberState(ventConfigEntry, blaubergVentoJS.Parameter.FILTER_TIMER, "info", FILTER_TIMER_MINUTES, "Minutes", false, 0, 129600);
-					this.createDeviceAndStringState(ventConfigEntry, 0, "info", FILTER_TIMER_STRING, "", false);
+					this.createDeviceAndNumberState(ventConfigEntry, 0, "info", FILTER_TIMER_STRING, "", false);
 					this.createDeviceAndStringState(ventConfigEntry, 0, "info", FIRMWARE_DATE, "", false);
-					this.createDeviceAndStringState(ventConfigEntry, blaubergVentoJS.Parameter.READ_FIRMWARE_VERSION, "info", READ_FIRMWARE_VERSION, "", false);
+					//this.createDeviceAndStringState(ventConfigEntry, blaubergVentoJS.Parameter.READ_FIRMWARE_VERSION, "info", READ_FIRMWARE_VERSION, "", false);
 					this.createDeviceAndNumberState(ventConfigEntry, blaubergVentoJS.Parameter.CURRENT_HUMIDITY, "info", CURRENT_HUMIDITY, "%", false, 0, 100);
 					this.createDeviceAndNumberState(ventConfigEntry, blaubergVentoJS.Parameter.MANUAL_SPEED, "control", MANUAL_SPEED, "%", true, 0, 100);
 					//this.createDeviceAndNumberState(ventConfigEntry, blaubergVentoJS.Parameter.BOOT_MODE, "info", BOOST_MODE, "", false, 0, 1);
